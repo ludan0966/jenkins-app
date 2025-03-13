@@ -6,7 +6,7 @@ pipeline {
               docker {
 
                image 'node: 22.14.0-alpine'
-               resuseNode true
+               reuseNode true
               }
                
             }

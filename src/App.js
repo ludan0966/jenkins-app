@@ -1,7 +1,7 @@
 function App() {
   return (
     <div >
-      gtftftf
+      This is my react APP
     </div>
   );
 }

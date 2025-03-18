@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image 'node:22.14.0-alpine' // 这里修正空格问题
+                    image 'node:20.11.1-alpine' 
                     reuseNode true
                 }
             }

@@ -1,7 +1,7 @@
 function App() {
   return (
     <div >
-      This is my react APP to CICD - trigger
+      This is my react APP to CICD - trigger-hahaha
     </div>
   );
 }

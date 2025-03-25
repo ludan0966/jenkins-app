@@ -51,13 +51,15 @@ pipeline {
                     reuseNode true
                     args '--entrypoint=""'
                 }
+            }
             steps {
                 withCredentials([usernamePassword(credentialsId: 'aws-temp', passwordVariable: 'AWS_SECRET_ACCESS_KEY', usernameVariable: 'AWS_ACCESS_KEY_ID')]) {
-                sh '''
-                aws --version
-                aws s3 ls
-                '''
-            }
+                    sh '''
+                       aws --version
+                      g aws s3 ls
+                    '''
+               }
+                
             }
         }
     }
